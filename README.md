@@ -1,71 +1,23 @@
-# Getting Started with Create React App
+#Getting Practice with Test-Driven Development
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Write out tests for the features you want built!"
 
-## Available Scripts
+##End-to-End 
+###Outside-In 
 
-In the project directory, you can run:
+E2E tests involve multiple assertions. Because they test EACH assertion EVERY time, they can be slow and cumbersome, BUT they are an excellent way to confirm all of the pieces of the Component Tests (about to get to that!) have already passed individually.
 
-### `npm start`
+## Component Tests
+###Inside-Out
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These tests are an excellent starting point when you begin implementing features in a component-based structure for your application. They involve singular assertions for each test, meaning they are quick and fantastic for specific functionality confirmation. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##So how does this all fit together?
 
-### `npm test`
+Using Component Tests and E2E we can verify each feature works AND ensure the application as a whole is working properly; if everything is playing nicely together, we can have full coverage in our testing!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Okay, but why does that matter?
 
-### `npm run build`
+Building and maintaining an application can be extremely involved and can sometimes become difficult to juggle. Using TDD, we can make sure from the very beginning that we don't have needless features AND that our user's experience is ideal. Our design is inherently driven by how we approach testing of each feature. Pretty neat, yeah? We can keep our code from turning into an amorphous monster by keeping things minimal and, wouldn't you know it, our app can be refactored later and go live without tedious manual tests or long delays. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TDD-Practice
+###I can't think of a reason NOT to use TDD in applications, can you?
